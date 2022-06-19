@@ -182,12 +182,18 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
     $(AUDIO_HAL_DIR)/configs/kona/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(AUDIO_HAL_DIR)/configs/kona/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/audio_platform_info_xrfusion.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_xrfusion.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/audio_platform_info_xrfusionult.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_xrfusionult.xml \
     $(AUDIO_HAL_DIR)/configs/kona/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_qrd.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_mixer_paths_xrfusion.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_xrfusion.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_mixer_paths_xrfusionult.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_xrfusionult.xml \
     $(AUDIO_HAL_DIR)/configs/kona/sound_trigger_mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_cdp.xml \
     $(AUDIO_HAL_DIR)/configs/kona/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(AUDIO_HAL_DIR)/configs/kona/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/mixer_paths_xrfusion.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_xrfusion.xml \
+    $(AUDIO_HAL_DIR)/configs/kona/mixer_paths_xrfusionult.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_xrfusionult.xml \
     $(AUDIO_HAL_DIR)/configs/kona/mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_cdp.xml \
     $(AUDIO_HAL_DIR)/configs/kona/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
