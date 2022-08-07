@@ -52,7 +52,9 @@ AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 DOLBY_ENABLE := false
 endif
 
+ifeq ($(TARGET_USES_DLKM),true)
 AUDIO_FEATURE_ENABLED_DLKM := true
+endif
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_SUPPORTS_GCS := false
 AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
@@ -140,6 +142,7 @@ endif
 BOARD_VENDOR_KERNEL_MODULES += \
     $(KERNEL_MODULES_OUT)/qca_cld3_wlan.ko
 
+ifeq ($(AUDIO_FEATURE_ENABLED_DLKM),true)
 #Audio DLKM
 AUDIO_DLKM := audio_apr.ko
 AUDIO_DLKM += audio_q6_pdr.ko
@@ -167,6 +170,7 @@ AUDIO_DLKM += audio_rx_macro.ko
 AUDIO_DLKM += audio_tx_macro.ko
 AUDIO_DLKM += audio_machine_kona.ko
 AUDIO_DLKM += audio_snd_event.ko
+endif
 
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 
