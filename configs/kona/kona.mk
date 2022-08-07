@@ -13,6 +13,7 @@ AUDIO_HAL_DIR := hardware/qcom-caf/sm8250/audio
 ifneq ($(AUDIO_USE_STUB_HAL), true)
 BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_AOSP_FOR_AUDIO := false
+endif
 
 ifneq ($(TARGET_USES_AOSP_FOR_AUDIO), true)
 USE_CUSTOM_AUDIO_POLICY := 1
@@ -229,15 +230,15 @@ persist.vendor.audio.apptype.multirec.enabled=false
 
 ##fluencetype can be "fluence" or "fluencepro" or "none"
 PRODUCT_VENDOR_PROPERTIES += \
-ro.vendor.audio.sdk.fluencetype=none\
-persist.vendor.audio.fluence.voicecall=true\
-persist.vendor.audio.fluence.voicerec=false\
-persist.vendor.audio.fluence.speaker=true\
+ro.vendor.audio.sdk.fluencetype=none \
+persist.vendor.audio.fluence.voicecall=true \
+persist.vendor.audio.fluence.voicerec=false \
+persist.vendor.audio.fluence.speaker=true \
 persist.vendor.audio.fluence.tmic.enabled=false
 
 ##speaker protection v3 switch and ADSP AFE API version
 PRODUCT_VENDOR_PROPERTIES += \
-persist.vendor.audio.spv3.enable=true\
+persist.vendor.audio.spv3.enable=true \
 persist.vendor.audio.avs.afe_api_version=2
 
 #disable tunnel encoding
@@ -266,7 +267,7 @@ vendor.audio.offload.multiaac.enable=true
 
 #Enable DS2, Hardbypass feature for Dolby
 PRODUCT_VENDOR_PROPERTIES += \
-vendor.audio.dolby.ds2.enabled=false\
+vendor.audio.dolby.ds2.enabled=false \
 vendor.audio.dolby.ds2.hardbypass=false
 
 #Disable Multiple offload sesison
@@ -351,7 +352,6 @@ vendor.audio.volume.headset.gain.depcal=true
 #enable dualmic fluence for voice communication
 PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.audio.fluence.voicecomm=true
-endif
 
 USE_XML_AUDIO_POLICY_CONF := 1
 
@@ -365,7 +365,6 @@ PRODUCT_VENDOR_PROPERTIES += aaudio.mmap_policy=2
 #Allow EXCLUSIVE then fall back to SHARED.
 PRODUCT_VENDOR_PROPERTIES += aaudio.mmap_exclusive_policy=2
 PRODUCT_VENDOR_PROPERTIES += aaudio.hw_burst_min_usec=2000
-
 
 #enable mirror-link feature
 PRODUCT_VENDOR_PROPERTIES += \
@@ -461,11 +460,11 @@ PRODUCT_PACKAGES += \
 
 # enable sound trigger hidl hal 2.2
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.2-impl \
+    android.hardware.soundtrigger@2.2-impl
 
 # enable sound trigger hidl hal 2.3
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES_ENG += \
     VoicePrintTest \
