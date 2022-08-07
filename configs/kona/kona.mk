@@ -139,9 +139,6 @@ BOARD_VENDOR_KERNEL_MODULES := \
     $(KERNEL_MODULES_OUT)/audio_snd_event.ko
 endif
 
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(KERNEL_MODULES_OUT)/qca_cld3_wlan.ko
-
 ifeq ($(AUDIO_FEATURE_ENABLED_DLKM),true)
 #Audio DLKM
 AUDIO_DLKM := audio_apr.ko
